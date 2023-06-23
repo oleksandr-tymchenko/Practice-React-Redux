@@ -7,21 +7,19 @@ import { BrowserRouter } from 'react-router-dom';
 import { AppRedux } from 'components/reduxComponents/AppRedux';
 import { Provider } from 'react-redux';
 import { store } from 'redux/store';
-
-
+import AppReduxLogin from 'components/AppReduxLogin';
 
 // import App from './testContext/App';
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <BrowserRouter>
-
-    <Provider store={store}>
-{/* <Context>
+      <Provider store={store}>
+        {/* <Context>
         <App /> */}
-        <AppRedux/>
-      {/* </Context> */}
-    </Provider>
-      
+        <AppReduxLogin />
+        {/* <AppRedux/> */}
+        {/* </Context> */}
+      </Provider>
     </BrowserRouter>
   </React.StrictMode>
 );
