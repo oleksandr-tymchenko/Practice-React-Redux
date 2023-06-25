@@ -3,7 +3,10 @@ import { useDispatch } from 'react-redux';
 // Імпортуємо генератор екшену
 // import { deleteTask, toggleCompleted } from "redux/actions";
 // !Після переходу на slice
-import { deleteTask, toggleCompleted } from 'redux/reducer';
+// import { deleteTask, toggleCompleted } from 'redux/reducer';
+
+// ! deleteTask, toggleCompleted  буде приходити з operations
+import { deleteTask, toggleCompleted } from 'redux/operations';
 
 import { MdClose } from 'react-icons/md';
 // import css from "./Task.module.css";
@@ -17,7 +20,7 @@ export const Task = ({ task }) => {
   const handleDelete = () => dispatch(deleteTask(task.id));
   // Викликаємо генератор екшену та передаємо ідентифікатор завдання
   // Відправляємо результат - екшен перемикання статусу завдання
-  const handleToggle = () => dispatch(toggleCompleted(task.id));
+  const handleToggle = () => dispatch(toggleCompleted(task));
 
   return (
     <Wrapper>

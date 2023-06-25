@@ -3,7 +3,9 @@ import { useDispatch } from 'react-redux';
 // Імпортуємо генератор екшену
 // import { addTask } from "redux/actions";
 // !Після переходу на slice
-import { addTask } from 'redux/reducer';
+// import { addTask } from 'redux/reducer';
+// ? замінюємо на данні з бекенду
+import { addTask } from 'redux/operations';
 // import { Button } from "components/Button/Button";
 import { Button } from '../Button/Button';
 // import css from "./TaskForm.module.css";

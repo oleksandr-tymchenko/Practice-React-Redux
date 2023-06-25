@@ -16,8 +16,8 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <Provider store={store}>
         {/* <Context>
         <App /> */}
-        <AppReduxLogin />
-        {/* <AppRedux/> */}
+        {/* <AppReduxLogin /> */}
+        <AppRedux />
         {/* </Context> */}
       </Provider>
     </BrowserRouter>
